@@ -7,6 +7,7 @@ namespace Triangulos.ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Triângulos\n");
+            Console.WriteLine("*Apenas valores numericos inteiros são aceitos nas variáveis X, Y e Z.");
 
             bool continuar = true;
             while (continuar)
@@ -48,20 +49,20 @@ namespace Triangulos.ConsoleApp
                 if (x == y && x == z && z == y)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Triângulo Equilátero"); //todos lados iguais
+                    Console.WriteLine("Triângulo Equilátero - todos os lados iguais"); //todos lados iguais
                     Console.ResetColor();
                 }
                 else if (x == y || y == z || x == z)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Triângulo Isóceles");//dois lados iguais
+                    Console.WriteLine("Triângulo Isósceles - dois lados iguais");//dois lados iguais
                     Console.ResetColor();
 
                 }
                 else if (x != y && y != z && x != z)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Triângulo Escaleno");//todos os lados diferentes
+                    Console.WriteLine("Triângulo Escaleno - todos os lados diferentes");//todos os lados diferentes
                     Console.ResetColor();
 
                 }
